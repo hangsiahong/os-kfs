@@ -21,6 +21,7 @@ cd $CWD
 cd ..
 cp -r os-kfs /home/kfs
 
+sudo chown -R kfs /home/kfs/os-kfs
 
 #echo 'Download script again this time as KFS user'
 
