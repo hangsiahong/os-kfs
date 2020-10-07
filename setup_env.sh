@@ -23,3 +23,4 @@ EOF
 
 
 source ~/.bash_profile
+exit
