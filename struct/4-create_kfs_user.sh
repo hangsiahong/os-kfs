@@ -26,4 +26,5 @@ sudo chown -R kfs /home/kfs/os-kfs
 #echo 'Download script again this time as KFS user'
 
 #su - kfs
-sudo -u kfs bash -c 'cd ~/os-kfs && bash setup_env.sh && bash build-stage1.sh' 
+sudo -u kfs bash -c 'cd ~/os-kfs && bash setup_env.sh';
+sudo -u kfs bash -c 'cd ~/os-kfs && bash build-stage1.sh';
