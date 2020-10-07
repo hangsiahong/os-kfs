@@ -17,6 +17,11 @@ esac
 
 chown -v kfs $KFS/sources
 
+cd $CWD
+cd ..
+cp -r os-kfs /home/kfs
+
+
 #echo 'Download script again this time as KFS user'
 
 #su - kfs
