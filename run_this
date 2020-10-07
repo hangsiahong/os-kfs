@@ -1,0 +1,10 @@
+#/bin/bash
+
+CWD=$PWD
+
+bash $CWD/struct/1-autocreate_part.sh;
+bash $CWD/struct/2-download_src.sh;
+bash $CWD/struct/3-create_layout.sh;
+bash $CWD/struct/4-create_kfs_user.sh;
+
+
