@@ -20,6 +20,8 @@ create_part() {
 
 mount_part() {
     mkdir -pv $LFS
+    mkdir -pv $LFS/boot
+    mount -v -t ext2 /dev/sdb1 $LFS/boot
     mount -v -t ext4 /dev/sdb3 $LFS
     /sbin/swapon -v /dev/sdb2
 }
