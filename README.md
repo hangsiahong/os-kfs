@@ -11,4 +11,7 @@ cd os-kfs
 bash 2_setup_env.sh
 bash 3_kfs_build_stage1.sh
 exit
-bash 4_setup_chroot.sh
+sudo bash 4_setup_chroot.sh
+sudo bash 5_enter_chroot.sh
+cd os-kfs
+bash 7_kfs_build_stage2.sh 

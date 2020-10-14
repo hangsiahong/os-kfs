@@ -88,7 +88,7 @@ basic_system_software() {
     bash $CWD/basic_system_software/70_utils_linux &&
     bash $CWD/basic_system_software/71_e2fsprogs &&
     bash $CWD/basic_system_software/72_sysklogd &&
-    bash $CWD/basic_system_software/73_sysvinit &&
+    bash $CWD/basic_system_software/73_sysvinit 
     # bash $CWD/basic_system_software/ &&
     # bash $CWD/basic_system_software/ &&
     
