@@ -5,6 +5,12 @@ CWD=$PWD
 source $CWD/config
 export LFS
 
+if [ $(id -u) != 0 ]; then
+	echo "$0 script need to run as root!"
+	exit 1
+fi
+
+
 chown -R root:root $LFS/{usr,lib,var,etc,bin,sbin,tools}
 case $(uname -m) in
   x86_64) chown -R root:root $LFS/lib64 ;;
