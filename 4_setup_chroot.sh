@@ -32,3 +32,8 @@ mount -vt tmpfs tmpfs $LFS/run
 if [ -h $LFS/dev/shm ]; then
   mkdir -pv $LFS/$(readlink $LFS/dev/shm)
 fi
+
+
+cd $CWD
+cd ../
+cp -r os-kfs /mnt/lfs
