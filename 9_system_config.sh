@@ -249,3 +249,44 @@ build_kernel() {
 
 build_kernel
 
+# install grub
+grub-install /dev/sdb
+
+# Creating the grub confi file
+cat > /boot/grub/grub.cfg << "EOF"
+# Begin /boot/grub/grub.cfg
+set default=0
+set timeout=5
+
+insmod ext2
+set root=(hd0,2)
+
+menuentry "GNU/Linux, Linux 5.8.3-lfs-10.0" {
+        linux   /boot/vmlinuz-5.8.3-lfs-10.0 root=/dev/sdb3 ro
+}
+EOF
+
+
+
+echo 10.0 > /etc/lfs-release
+
+cat > /etc/lsb-release << "EOF"
+DISTRIB_ID="Linux From Scratch"
+DISTRIB_RELEASE="10.0"
+DISTRIB_CODENAME="Hangsia HONG"
+DISTRIB_DESCRIPTION="Linux From Scratch"
+EOF
+
+
+cat > /etc/os-release << "EOF"
+NAME="Linux From Scratch"
+VERSION="10.0"
+ID=lfs
+PRETTY_NAME="Linux From Scratch 10.0"
+VERSION_CODENAME="Hangsia HONG"
+EOF
+
+
+echo -e "Run the Last Script for umount virtual file systems"
+logout
+

@@ -11,3 +11,11 @@ chroot "$LFS" /usr/bin/env -i   \
     PS1='(lfs chroot) \u:\w\$ ' \
     PATH=/bin:/usr/bin:/sbin:/usr/sbin \
     /bin/bash --login +h
+
+
+
+# if [ -x $LFS/usr/bin/env ]; then
+# 	ENVLFS=/usr/bin/env
+# else
+# 	ENVLFS=/tools/bin/env
+# fi
