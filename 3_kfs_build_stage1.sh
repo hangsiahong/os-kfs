@@ -31,4 +31,3 @@ function build_tool() {
 }
 
 build_tool
-exit 0
