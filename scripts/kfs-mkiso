@@ -69,7 +69,7 @@ WORKDIR="$KFS/tmp"
 WDIR="$WORKDIR/iso"
 LABEL="KFSLIVECD"
 OUTPUT="kfs-livecd-$(date +"%Y%m%d").iso"
-FILEDIR="$CWD/files"
+FILEDIR="$CWD/kmp-files"
 
 . $CWD/kmp-config
 
