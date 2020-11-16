@@ -114,7 +114,7 @@ source $CWD/kmp-config
 
 PATH=/tools/bin:/bin:/usr/bin
 
-TCDIR=$CWD/toolchain
+TCDIR=$CWD/kmp-toolchain
 PATCHDIR=$CWD/patches
 FILEDIR=$CWD/files
 
