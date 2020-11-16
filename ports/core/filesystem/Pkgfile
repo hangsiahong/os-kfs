@@ -7,6 +7,7 @@ name=filesystem
 version=1
 release=1
 source=(bash_logout.skel
+	bash_aliases.skel
 	bash_profile.skel
 	bashrc
 	bashrc.skel
