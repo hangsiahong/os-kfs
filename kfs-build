@@ -8,7 +8,7 @@
 
 
 main() {
-    ./scripts/kfs-toolchain && sudo ./scripts/kfs-base && sudo ./scripts/kfs-mkiso
+    sudo ./scripts/kfs-prepare && ./scripts/kfs-toolchain && sudo ./scripts/kfs-base && sudo ./scripts/kfs-mkiso
 
 }
 
