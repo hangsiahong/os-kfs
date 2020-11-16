@@ -14,7 +14,7 @@ build() {
 # mozilla/security/nss/lib/ckfw/builtins/certdata.txt
 #
 # Authors: DJ Lucas
-#          Bruce Dubbs
+#          Hangsia Hong
 #
 # Version 20120211
 my $certdata = './tempfile.cer';
@@ -56,7 +56,7 @@ EOF
 # Version number is obtained from the version of the data.
 #
 # Authors: DJ Lucas
-#          Bruce Dubbs
+#          Hangsia Hong
 #
 # Version 20120211
 certdata="certdata.txt"

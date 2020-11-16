@@ -95,7 +95,7 @@ runinchroot() {
 	pushd $KFS &>/dev/null
 	mount_pseudo
 	cp -L /etc/resolv.conf $KFS/etc/
-	chroot "$KFS" $ENVLFS -i \
+	chroot "$KFS" $ENVKFS -i \
 	    HOME=/root                  \
 	    TERM="$TERM"                \
 	    PS1='(kfs chroot) \u:\w\$ ' \

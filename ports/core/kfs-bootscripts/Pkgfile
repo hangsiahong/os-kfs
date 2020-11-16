@@ -1,4 +1,4 @@
-# Description: A set of scripts to start/stop the LFS system at bootup/shutdown
+# Description: A set of scripts to start/stop the KFS system at bootup/shutdown
 # URL: https://koompi.org        
 # Maintainer:  HangsiaHONG, hangsia@koompi.org
 # Organization:  KOOMPI, koompi.com
@@ -7,7 +7,7 @@
 name=kfs-bootscripts
 version=20200818
 release=1
-source=(http://www.linuxfromscratch.org/lfs/downloads/10.0/lfs-bootscripts-$version.tar.xz
+source=(https://github.com/hangsiaongithub/kfs-bootscripts-$version/releases/download/v1.0/kfs-bootscripts-$version.tar.gz
 	kfs-bootscripts_add-support-uefi.patch
 	clock
 	console

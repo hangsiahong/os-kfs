@@ -1,9 +1,11 @@
 # Begin /etc/bashrc
-# Written for Beyond Linux From Scratch
-# by James Robertson <jameswrobertson@earthlink.net>
-# updated by Bruce Dubbs <bdubbs@linuxfromscratch.org>
+# Written for KOOMPI From Scratch
+# by Hong Hangsia <hangsia@koompi.org>
+
+source /etc/bash_aliases
 
 # System wide aliases and functions.
+[[ $- != *i* ]] && return
 
 # System wide environment variables and startup programs should go into
 # /etc/profile.  Personal environment variables and startup programs
@@ -17,19 +19,16 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 
 # Provides prompt for non-login shells, specifically shells started
-# in the X environment. [Review the LFS archive thread titled
+# in the X environment. [Review the KFS archive thread titled
 # PS1 Environment Variable for a great case study behind this script
 # addendum.]
 
-NORMAL="\[\e[0m\]"
-RED="\[\e[1;31m\]"
-GREEN="\[\e[1;32m\]"
-if [[ $EUID == 0 ]] ; then
-  PS1="$RED\u [ $NORMAL\w$RED ]# $NORMAL"
-else
-  PS1="$GREEN\u [ $NORMAL\w$GREEN ]\$ $NORMAL"
-fi
+PS1="\[\e[31m\]\u\[\e[m\]\[\e[33m\]@\[\e[m\]\[\e[35m\]\h\[\e[m\]\[\e[34m\]\\[\e[m\]\[\e[36m\]:\w\[\e[m\]\[\e[35m\]\`parse_git_branch\`\[\e[m\] \n> "
 
-unset RED GREEN NORMAL
+
+# check command history
+function h() {
+    history | grep $1 ;
+}
 
 # End /etc/bashrc
