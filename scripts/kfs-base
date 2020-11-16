@@ -124,7 +124,7 @@ trap "interrupted" SIGHUP SIGINT SIGQUIT SIGTERM
 
 CWD=$PWD
 
-source $CWD/config
+source $CWD/kmp-config
 
 if [ $(id -u) != 0 ]; then
 	echo "$0 script need to run as root!"
