@@ -127,5 +127,5 @@ rm -r "${TEMPDIR}"
 EOF
 	chmod +x make-ca.sh
 	./make-ca.sh
-	install -v -m644 B-ca-bundle.crt /tools/etc/ssl/certs/ca-certificates.crt
+	install -v -m644 BLFS-ca-bundle.crt /tools/etc/ssl/certs/ca-certificates.crt
 }
