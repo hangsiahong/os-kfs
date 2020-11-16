@@ -115,8 +115,8 @@ source $CWD/kmp-config
 PATH=/tools/bin:/bin:/usr/bin
 
 TCDIR=$CWD/kmp-toolchain
-PATCHDIR=$CWD/patches
-FILEDIR=$CWD/files
+PATCHDIR=$CWD/kmp-patches
+FILEDIR=$CWD/kmp-files
 
 export LC_ALL=C PATH MAKEFLAGS KFS KFS_TGT
 
